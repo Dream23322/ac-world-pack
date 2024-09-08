@@ -1,7 +1,7 @@
 {
 	"format_version": 2,	
 	"header": {
-		"name": "Anticheat World Pack",
+		"name": "Anticheat World Pack 0.0.1",
 		"description": "Commands and other to help run anticheat test world",
 		"uuid": "504504ba-7b44-4af5-9c37-dc7c6db6989b",
 		"version": [0, 0, 1],
