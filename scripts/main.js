@@ -96,7 +96,7 @@ world.beforeEvents.chatSend.subscribe((msg) => {
         player.sendMessage(`\n\n§h==========================================`);
         player.sendMessage("§l Commands")
         player.sendMessage(`§h------------------------------------------`);
-        player.sendMessage(`>spawn - Teleports you to spawn\n>fly - Enables fly mode\n>blocks - Gives you 256 blocks\n>speed - Gives you speed 1 for 10000 seconds \n>speed2 - Gives you speed 2 for 10000 seconds \n>jumpboost - Gives you Jump Boost 1 For 10000 seconds \n>jumpboost2 - Gives you Jump Boost 2 for 10000 seconds\n>sword - Gives you a sword \n>kit1 - Summons in Kit 1 \n>kit2 - Summons in OP Kit\n>Clears inventory and effects\n>anticheat - Tries to find the anticheat being used`);
+        player.sendMessage(`>spawn - Teleports you to spawn\n>fly - Enables fly mode\n>blocks - Gives you 256 blocks\n>speed - Gives you speed 1 for 10000 seconds \n>speed2 - Gives you speed 2 for 10000 seconds \n>jumpboost - Gives you Jump Boost 1 For 10000 seconds \n>jumpboost2 - Gives you Jump Boost 2 for 10000 seconds\n>sword - Gives you a sword \n>kit1 - Summons in Kit 1 \n>kit2 - Summons in OP Kit\n>Clears inventory and effects\n>anticheat - Tries to find the anticheat being used\n>heal - Heals you\n>day - Sets time to Day\n>night - Sets time to Night\n>help - Shows this help message`);
         player.sendMessage(`§h==========================================\n\n`);
     } else if(message == ">anticheat") {
         let can = false;
@@ -110,6 +110,12 @@ world.beforeEvents.chatSend.subscribe((msg) => {
             player.sendMessage("§iAssistant §h> §cAnticheat found: Matrix!");
             can = true;
         }
+    } else if (message == ">heal") {
+        player.runCommandAsync(`effect @s instant_health 1 255`);
+        player.sendMessage(`§iAssistant §h> §aHealed!`);
+    } else if (message == ">day") {
+        player.runCommandAsync(`time set day`);
+        player.sendMessage(`§iAssistant §h> §aSet time to day!`);
     }else {
         if(message.charAt(0) == ">") {
             player.sendMessage(`§iAssistant §h> §cInvalid command! Use >help for a list of commands!`);

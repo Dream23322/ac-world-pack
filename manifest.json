@@ -1,10 +1,10 @@
 {
 	"format_version": 2,	
 	"header": {
-		"name": "Anticheat World Pack 0.0.4",
+		"name": "Anticheat World Pack 0.0.5",
 		"description": "Commands and other to help run anticheat test world",
-		"uuid": "504504ba-7b44-7af5-9c37-dc8c6db6589b",
-		"version": [0, 0, 3],
+		"uuid": "0519fc7d-8ab7-43d0-97c1-cdbc2baec69a",
+		"version": [0, 0, 5],
 		"min_engine_version": [1, 19, 0]
 	},
 	"metadata": {
