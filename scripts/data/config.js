@@ -29,10 +29,10 @@ export default
             "command": "effect @s speed 10000 2",
         },
         "jumpboost": {
-            "command": "effect @s jumpboost 10000 1",
+            "command": "effect @s jump_boost 10000 1",
         },
         "jumpboost2": {
-            "command": "effect @s jumpboost 10000 2",
+            "command": "effect @s jump_boost 10000 2",
         },
         "sword": {
             "command": "give @s diamond_sword"
