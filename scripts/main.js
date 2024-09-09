@@ -3,7 +3,6 @@ import config from "./data/config.js";
 
 const world = Minecraft.world;
 const system = Minecraft.system;
-
 world.beforeEvents.chatSend.subscribe((msg) => {
 	const message = msg.message.toLowerCase();
 	const player = msg.sender;
