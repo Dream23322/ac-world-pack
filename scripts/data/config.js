@@ -15,7 +15,9 @@ export default
     },
     "commandData": {
         "spawn": {
-            "coords": [0, 100, 0],
+            "x": 0,
+            "y": 100,
+            "z": 0
         },
         "blocks": {
             "blockid": "minecraft:wool",
